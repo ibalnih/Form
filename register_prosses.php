@@ -1,5 +1,6 @@
 <?php
 
+// Membuat koneksi ke database
 include_once 'db.php';
 
 $username = $_POST['username'];

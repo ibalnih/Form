@@ -1,6 +1,6 @@
 <?php
 
-//Membuat koneksi ke database
+// Membuat koneksi ke database
 include_once 'db.php';
 
 $sql = "SELECT * FROM post";
