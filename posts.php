@@ -18,7 +18,7 @@ $result = $mysqli->query($sql);
 </head>
 <body>
     <h1>Posts</h1>
-
+    <a href="create.php">Create Post</a>
     <?php
 
     // Jika tabel kosong/tidak ada post
@@ -28,6 +28,7 @@ $result = $mysqli->query($sql);
     } else {
         while ($post = $result->fetch_object()) {
             echo "<h3>$post->title</h3>";
+            echo "<a href=\"edit.php?id=$post->id\">Edit</a>";
             echo "<p align=\"justify\">$post->content</p>";
         }
     }
